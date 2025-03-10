@@ -1,7 +1,8 @@
 import { CURRENTLINE, ORANGE, PINK } from "../../helpers/colors";
+import Spinner from "../Spinner";
 import Contact from "./Contact";
 
-const Contacts = ({ contacts }) => {
+const Contacts = ({ contacts, loading }) => {
   return (
     <>
       <section className="container">
@@ -18,24 +19,28 @@ const Contacts = ({ contacts }) => {
           </div>
         </div>
       </section>
-      <section className="container">
-        <div className="row">
-          {contacts.length > 0 ? (
-            contacts.map((c) => <Contact key={c.id} contacts={c} />)
-          ) : (
-            <div
-              className="text-center py-5"
-              style={{ backgroundColor: CURRENTLINE }}
-            >
-              <p className="h3" style={{ color: ORANGE }}>
-                Not Found Contact ...
-              </p>
+      {loading ? (
+        <Spinner />
+      ) : (
+        <section className="container">
+          <div className="row">
+            {contacts.length > 0 ? (
+              contacts.map((c) => <Contact key={c.id} contacts={c} />)
+            ) : (
+              <div
+                className="text-center py-5"
+                style={{ backgroundColor: CURRENTLINE }}
+              >
+                <p className="h3" style={{ color: ORANGE }}>
+                  Not Found Contact ...
+                </p>
                 <span style={{ fontSize: "60px", padding: "0px" }}>🚫</span>
                 {/* <img src={require("../../helpers/basir.JPG")} alt="" /> */}
-            </div>
-          )}
-        </div>
-      </section>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
     </>
   );
 };
