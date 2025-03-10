@@ -1,7 +1,7 @@
 const Spinner = () => {
   return (
     <div className="Spinner">
-      <p className="d-block m-auto">Loading ...</p>
+      <img src="assets/loader.gif" alt="spinner loading" className="d-block m-auto" />
     </div>
   );
 };

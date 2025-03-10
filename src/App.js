@@ -1,10 +1,16 @@
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useState } from "react";
-import Contacts from "./components/contact/Contacts.jsx";
-import Navbar from "./components/Navbar.jsx";
+import {
+  AddContact,
+  EditContact,
+  ViewContact,
+  Contacts,
+  Contact,
+  Navbar,
+} from "./components";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [getContacts, setContacts] = useState([]);
   return (
     <div className="app">
