@@ -10,7 +10,10 @@ const Contact = () => {
               <img
                 src="assets/sardar.jpg"
                 alt=""
-                style={{ border: `1px solid ${PURPLE}` }}
+                style={{
+                  border: `1px solid ${PURPLE}`,
+                  height: "200px",
+                }}
                 className="img-fluid rounded"
               />
             </div>
@@ -20,15 +23,15 @@ const Contact = () => {
                   Full Name: <span className="fw-bold">Sardar Hossaini</span>
                 </li>
                 <li className="list-group-item list-group-item-dark">
-                  Phone No: <span className="fw-bold">0782148885</span>
+                  Phone: <span className="fw-bold">0782148885</span>
                 </li>
                 <li className="list-group-item list-group-item-dark">
                   Email:{" "}
-                  <span className="fw-bold">sardarhossaini2022@gmail.com</span>
+                  <span className="fw-bold">sardarhossaini@gmail.com</span>
                 </li>
               </ul>
             </div>
-            <div className="col-md-1 col-sm-1 d-flex flex-md-column align-items-center flex-row">
+            <div className="col-md-1 col-sm-1 d-flex flex-column align-items-center">
               <button className="btn my-1" style={{ backgroundColor: ORANGE }}>
                 <i className="fa fa-eye"></i>
               </button>
