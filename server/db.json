@@ -1,17 +1,17 @@
 {
   "contacts": [
     {
-      "full_name": "Sardar Hossiani",
-      "photo":"D:/project/New Projects/Contact management/public/assets/sardar.jpg",
+      "full_name": "Najib Jafari",
+      "photo":"assets/najib.JPG",
       "phone":"0782148885",
       "job":"programmer",
-      "email":"sardar@gmail.com",
-      "group":"1",
+      "email":"najibullah@gmail.com",
+      "group":"2",
       "id":1
     },
     {
       "full_name": "Mahdi Hossain",
-      "photo": "D:/project/New Projects/Contact management/public/assets/sardar.jpg",
+      "photo": "assets/sardar.jpg",
       "phone": "0774027496",
       "job": "programmer",
       "email": "mahdi@gmail.com",

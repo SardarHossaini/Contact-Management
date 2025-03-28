@@ -23,7 +23,7 @@ const Contacts = ({ contacts, loading }) => {
         <section className="container">
           <div className="row">
             {contacts.length > 0 ? (
-              contacts.map((c) => <Contact key={c.id} contacts={c} />)
+              contacts.map((c) => <Contact key={c.id} contact={c} />)
             ) : (
               <div
                 className="text-center py-5"
