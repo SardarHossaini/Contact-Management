@@ -24,3 +24,7 @@ input[type="number"] {
   background-color: #44475a !important;
   border-color: #bd93f9 !important;
 }
+.link {
+  text-decoration: none;
+  color: white;
+}

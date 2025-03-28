@@ -1,5 +1,6 @@
 import SearchContact from "./Contacts/SearchContact";
 import { PURPLE, BACKGROUND } from "../helpers/colors";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 const Navbar = () => {
   return (
     <nav
@@ -10,9 +11,11 @@ const Navbar = () => {
         <div className="row w-100">
           <div className="col">
             <div className="navbar-brand">
-              <i className="fa fa-id-badge" style={{ color: PURPLE }}></i>
-              {"  "}
-              <span style={{ color: PURPLE }}>contact</span> management
+              <Link to="/" className="link">
+                <i className="fa fa-id-badge" style={{ color: PURPLE }}></i>
+                {"  "}
+                <span style={{ color: PURPLE }}>contact</span> management
+              </Link>
             </div>
           </div>
           <div className="col">

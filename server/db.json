@@ -39,6 +39,16 @@
       "email": "mahdi@gmail.com",
       "group": "2",
       "id": 2
+    },
+    {
+      "id": "ff94",
+      "firstName": "Sardar",
+      "lastName": "Hussaini",
+      "photo": "C:\\fakepath\\IMG_2968.JPG",
+      "phone": "0782148885",
+      "job": "Self Employed",
+      "email": "sardarhossaini2022@gmail.com",
+      "group": "friends"
     }
   ],
   "groups": [
