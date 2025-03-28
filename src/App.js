@@ -8,18 +8,34 @@ import {
   Navbar,
 } from "./components";
 import { useFetch } from "./useFetch";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
-  
   const { getdata, loading } = useFetch("http://localhost:8000/contacts");
 
   // console.log(contacts)
-  
+
   return (
-    <div className="app">
-      <Navbar />
-      <Contacts contacts={getdata} loading={loading} />
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Contacts contacts={getdata} loading={loading} />
+          </Route>
+          <Route path="/create">
+            <AddContact />
+          </Route>
+          <Route path="/edit">
+            <EditContact />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
