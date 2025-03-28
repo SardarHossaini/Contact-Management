@@ -1,6 +1,6 @@
 import { CURRENTLINE, CYAN, ORANGE, PURPLE, RED } from "../../helpers/colors";
 
-const Contact = () => {
+const Contact = ({contacts}) => {
   return (
     <div className="col-md-6 col-6">
       <div className="card my-2" style={{ backgroundColor: CURRENTLINE }}>
@@ -8,7 +8,7 @@ const Contact = () => {
           <div className="row align-items-center d-flex justify-content-around">
             <div className="col-md-4 col-sm-4">
               <img
-                src="assets/sardar.jpg"
+                src={contacts.photo}
                 alt=""
                 style={{
                   border: `1px solid ${PURPLE}`,
@@ -20,14 +20,14 @@ const Contact = () => {
             <div className="col-md-7 col-sm-7">
               <ul className="list-group">
                 <li className="list-group-item list-group-item-dark">
-                  Full Name: <span className="fw-bold">Sardar Hossaini</span>
+                  Full Name: <span className="fw-bold">{ contacts.full_name }</span>
                 </li>
                 <li className="list-group-item list-group-item-dark">
-                  Phone: <span className="fw-bold">0782148885</span>
+                  Phone: <span className="fw-bold">{ contacts.phone }</span>
                 </li>
                 <li className="list-group-item list-group-item-dark">
                   Email:{" "}
-                  <span className="fw-bold">sardarhossaini@gmail.com</span>
+                  <span className="fw-bold">{ contacts.email }</span>
                 </li>
               </ul>
             </div>
