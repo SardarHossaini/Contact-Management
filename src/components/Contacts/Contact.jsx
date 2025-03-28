@@ -8,8 +8,8 @@ const Contact = ({contacts}) => {
           <div className="row align-items-center d-flex justify-content-around">
             <div className="col-md-4 col-sm-4">
               <img
-                src={contacts.photo}
-                alt=""
+                src='{contacts.photo}'
+                alt={contacts.full_name}
                 style={{
                   border: `1px solid ${PURPLE}`,
                   height: "200px",
