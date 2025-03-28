@@ -19,9 +19,7 @@ const Contacts = ({ contacts, loading }) => {
           </div>
         </div>
       </section>
-      {loading ? (
-        <Spinner />
-      ) : (
+      {loading ? (<Spinner />) : (
         <section className="container">
           <div className="row">
             {contacts.length > 0 ? (
@@ -35,7 +33,6 @@ const Contacts = ({ contacts, loading }) => {
                   Not Found Contact ...
                 </p>
                 <span style={{ fontSize: "60px", padding: "0px" }}>🚫</span>
-                {/* <img src={require("../../helpers/basir.JPG")} alt="" /> */}
               </div>
             )}
           </div>

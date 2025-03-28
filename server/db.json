@@ -1,0 +1,42 @@
+{
+  "contacts": [
+    {
+      "full_name": "Sardar Hossiani",
+      "photo":"D:\/project\/New Projects\/Contact management\/public\/assets\/sardar.jpg",
+      "phone":"0782148885",
+      "job":"programmer",
+      "group":"1",
+      "id":1
+    },
+    {
+      "full_name": "Mahdi Hossain",
+      "photo": "D:/project/New Projects/Contact management/public/assets/sardar.jpg",
+      "phone": "0774027496",
+      "job": "programmer",
+      "group": "2",
+      "id": 2
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Collagate"
+    },
+    {
+      "id": 2,
+      "name": "friends"
+    },
+    {
+      "id": 3,
+      "name": "family"
+    },
+    {
+      "id": 4,
+      "name": "Known"
+    },
+    {
+      "id": 1,
+      "name": "service"
+    }
+  ]
+}
