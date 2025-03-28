@@ -1,0 +1,24 @@
+.boxies{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.cart .cart-img{
+  width: 100%;
+  height: 100%;
+}
+.cart .actions{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px 0;
+}
+@media (max-width:992px) {
+  .boxies{
+  grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width:662px) {
+  .boxies{
+  grid-template-columns: repeat(2, 1fr);
+  }
+}

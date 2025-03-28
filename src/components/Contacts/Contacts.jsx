@@ -1,6 +1,8 @@
 import { CURRENTLINE, ORANGE, PINK } from "../../helpers/colors";
 import Spinner from "../Spinner";
 import Contact from "./Contact";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import "./Contact.css";
 
 const Contacts = ({ contacts, loading }) => {
   return (
@@ -10,18 +12,25 @@ const Contacts = ({ contacts, loading }) => {
           <div className="row">
             <div className="col">
               <p className="h3">
-                <button className="btn mx-2" style={{ backgroundColor: PINK }}>
-                  Create New
-                  <i className="fa fa-plus-circle mx-2"></i>
-                </button>
+                <Link to="/create">
+                  <button
+                    className="btn mx-2"
+                    style={{ backgroundColor: PINK }}
+                  >
+                    Create New
+                    <i className="fa fa-plus-circle mx-2"></i>
+                  </button>
+                </Link>
               </p>
             </div>
           </div>
         </div>
       </section>
-      {loading ? (<Spinner />) : (
+      {loading ? (
+        <Spinner />
+      ) : (
         <section className="container">
-          <div className="row">
+          <div className="boxies">
             {contacts.length > 0 ? (
               contacts.map((c) => <Contact key={c.id} contact={c} />)
             ) : (

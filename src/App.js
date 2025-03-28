@@ -15,9 +15,10 @@ import {
 } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
-  const { getdata, loading } = useFetch("http://localhost:8000/contacts");
-
-  // console.log(contacts)
+  const { getdata: contacts, loading } = useFetch("http://localhost:8000/contacts");
+  const { getdata: groups, loading:loading2 } = useFetch(
+    "http://localhost:8000/groups"
+  );
 
   return (
     <Router>
@@ -25,7 +26,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/">
-            <Contacts contacts={getdata} loading={loading} />
+            <Contacts contacts={contacts} loading={loading} />
           </Route>
           <Route path="/create">
             <AddContact />
